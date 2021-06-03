@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"edu.escuelaing.arsw.countingLines.app","l":"countingLines"},{"p":"edu.escuelaing.arsw.countingLines.app","l":"countingLinesTest"}];updateSearchResults();

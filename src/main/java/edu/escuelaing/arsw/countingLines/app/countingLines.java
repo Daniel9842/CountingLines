@@ -5,8 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
 /**
- * Hello world!
- *
+ * @author Daniel Santiago Ducuara Ardila
  */
 //This class counts the number of lines in a file.
 public class countingLines 
