@@ -11,6 +11,6 @@ tipo de conteo retorna el valor de una vez si el parámetro es phy ya que es la 
 locCount es el método encargado de realizar la cuenta sin tener en cuenta las lineas en blanco o las lineas comentadas, al final retorna el valor del conteo a la 
 función toDecide.
 
-**Para la ejecución de pruebas es necesario cambiar la ruta del archivo.**
+**Para la ejecución de pruebas es necesario cambiar la ruta del archivo.**<br>
 La productividad de este proyecto fue de 199LOC/8h .
 
