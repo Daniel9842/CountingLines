@@ -4,20 +4,20 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
+//@author Daniel Santiago Ducuara Ardila 
 
 /**
- * @author Daniel Santiago Ducuara Ardila
+ * This class counts the number of lines in a file.
  */
-//This class counts the number of lines in a file.
 public class countingLines 
 {	
-	
-	/*this method reads the file and executes the method toDecide.
-	 *@params args is a list of strings, contains the required parameters in the program.
-	 */
+
+/**this method reads the file and executes the method toDecide.
+*@param args is a list of strings, contains the required parameters in the program.
+*/
     public static void main( String[] args ) 
     {
-    	//lines is a list of strings, each value contains a line from the file.
+//lines is a list of strings, each value contains a line from the file.
     	List<String> lines;
 		try {
 			lines = Files.readAllLines(Paths.get(args[1]),
@@ -27,11 +27,11 @@ public class countingLines
 			e.printStackTrace();
 		}
     }
-    /*this method analyzes the first input and decides what the program does.
-	 *@params lines is a list of strings, each value contains a line from the file.
-	 *@params option is the type of count that you want to perform.
-	 *@return the value of the count.
-	 */
+/**this method analyzes the first input and decides what the program does.
+*@param lines is a list of strings, each value contains a line from the file.
+*@param option is the type of count that you want to perform.
+*@return the value of the count.
+*/
     public static int toDecide(List<String> lines,String option){
     	//Count is a variable that stores the number of lines.
     	int count = 0;
@@ -48,10 +48,10 @@ public class countingLines
     	
     }
     
-    /*this method counts the number of lines in a file without the comments and white lines.
-	 *@params lines is a list of strings, each value contains a line from the file.
-	 *@return the value of the count.
-	 */
+/**this method counts the number of lines in a file without the comments and white lines.
+*@param lines is a list of strings, each value contains a line from the file.
+*@return the value of the count.
+*/
     public static int locCount(List<String> lines){
     	//commentType2 is a variable which controls if the line is inside a comment.
     	boolean commentType2 = false;

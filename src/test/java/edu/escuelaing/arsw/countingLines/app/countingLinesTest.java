@@ -7,16 +7,17 @@ import java.util.List;
 import junit.framework.*;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-/**
- * @author Daniel Santiago Ducuara Ardila
- */
+//@author Daniel Santiago Ducuara Ardila 
+
 /**
  * Unit test for simple countingLines.
  */
 public class countingLinesTest 
     extends TestCase
 {
-	  //this test verifies that the number of lines is correct with the phy parameter.
+/**
+ * this test verifies that the number of lines is correct with the phy parameter.
+ */
 	  public void testPhy() {
 		  int value = 0;
 		  List<String> lines;
@@ -31,7 +32,9 @@ public class countingLinesTest
 		  
 	   assertEquals(17,value);
 	  }
-	//this test verifies that the number of lines is correct with the single comments and with the loc parameter.
+/**
+ * this test verifies that the number of lines is correct with the single comments and with the loc parameter.
+ */
 	  public void testLocSingleLineComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -46,7 +49,9 @@ public class countingLinesTest
 		  
 	   assertEquals(17,value);
 	  }
-	//this test verifies that the number of lines is correct with the multi-line comments and with the loc parameter.
+/**
+ * this test verifies that the number of lines is correct with the multi-line comments and with the loc parameter.
+ */
 	  public void testLocMultiLineComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -61,7 +66,9 @@ public class countingLinesTest
 		  
 	   assertEquals(14,value);
 	  }
-	//this test verifies that the number of lines is correct with white lines and with the loc parameter.
+/**
+ * this test verifies that the number of lines is correct with white lines and with the loc parameter.
+ */
 	  public void testLocWhiteLines() {
 		  int value = 0;
 		  List<String> lines;
@@ -76,7 +83,9 @@ public class countingLinesTest
 		  
 	   assertEquals(9,value);
 	  }
-	//this test verifies that the number of lines is correct with document comments and with the loc parameter.
+/**
+ * this test verifies that the number of lines is correct with document comments and with the loc parameter.
+ */
 	  public void testLocDocumentComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -91,7 +100,9 @@ public class countingLinesTest
 		  
 	   assertEquals(29,value);
 	  }
-	//this test verifies that the number of lines is correct with the single,multi-line,document comments and with the loc parameter.
+/**
+ * this test verifies that the number of lines is correct with the single,multi-line,document comments and with the loc parameter.
+ */
 	  public void testLocComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -106,7 +117,9 @@ public class countingLinesTest
 		  
 	   assertEquals(35,value);
 	  }
-	//check the error in the document address
+/**
+ * check the error in the document address
+ */
 	  public void testFileNotFound() {
 		  List<String> lines;
 		  String val = null;
