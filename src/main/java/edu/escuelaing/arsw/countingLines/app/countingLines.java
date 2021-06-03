@@ -23,7 +23,8 @@ public class countingLines
 		try {
 			lines = Files.readAllLines(Paths.get(args[1]),
 			        StandardCharsets.UTF_8);
-			toDecide(lines,args[0]);
+			int valueFinal = toDecide(lines,args[0]);
+			System.out.println(valueFinal);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
