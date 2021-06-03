@@ -4,10 +4,11 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
-//@author Daniel Santiago Ducuara Ardila 
+
 
 /**
  * This class counts the number of lines in a file.
+ * @author Daniel Santiago Ducuara Ardila 
  */
 public class countingLines 
 {	
