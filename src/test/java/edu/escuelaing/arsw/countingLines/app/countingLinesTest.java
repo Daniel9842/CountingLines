@@ -7,7 +7,6 @@ import java.util.List;
 import junit.framework.*;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-
 /**
  * Unit test for simple countingLines.
  * @author Daniel Santiago Ducuara Ardila 
