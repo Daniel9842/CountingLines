@@ -1,7 +1,7 @@
 # INTRODUCTION TO JAVA, MVN, AND GIT: LOC Counting
 ## Daniel Santiago Ducuara Ardila
 ## 02/06/2021
-![Diseño CountingLinesline](/Users/Portatil/OneDrive/Documentos/ARSW/Taller1CountingLines/countingLines/Design/coutingLines.png "Diseño CountingLines")
+![Diseño CountingLinesline](/Design/coutingLines.png "Diseño CountingLines")
 El método main es quien se encarga de recibir los parámetros indicados por el usuario y de ingresar cada linea a una lista.
 El metodo toDecide se encarga de recibir como parámetros la lista creada en el main y el tipo de conteo, dependiendo del
 tipo de conteo retorna el valor de una vez si el parámetro es phy, si el parametro es loc se llama a la funcion locCount.
