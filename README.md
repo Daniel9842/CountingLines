@@ -12,5 +12,5 @@ locCount es el método encargado de realizar la cuenta sin tener en cuenta las l
 función toDecide.
 
 **Para la ejecución de pruebas es necesario cambiar la ruta del archivo.**<br>
-La productividad de este proyecto fue de 159LOC/8h .
+La productividad de este proyecto fue de 147LOC/8h .
 
