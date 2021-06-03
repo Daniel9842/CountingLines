@@ -30,6 +30,7 @@ public class countingLinesTest
 		  
 	   assertEquals(17,value);
 	  }
+	//this test verifies that the number of lines is correct with the single comments and with the loc parameter.
 	  public void testLocSingleLineComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -44,7 +45,7 @@ public class countingLinesTest
 		  
 	   assertEquals(17,value);
 	  }
-	  
+	//this test verifies that the number of lines is correct with the multi-line comments and with the loc parameter.
 	  public void testLocMultiLineComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -59,7 +60,7 @@ public class countingLinesTest
 		  
 	   assertEquals(14,value);
 	  }
-	  
+	//this test verifies that the number of lines is correct with white lines and with the loc parameter.
 	  public void testLocWhiteLines() {
 		  int value = 0;
 		  List<String> lines;
@@ -74,7 +75,7 @@ public class countingLinesTest
 		  
 	   assertEquals(9,value);
 	  }
-	  
+	//this test verifies that the number of lines is correct with document comments and with the loc parameter.
 	  public void testLocDocumentComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -89,7 +90,7 @@ public class countingLinesTest
 		  
 	   assertEquals(29,value);
 	  }
-	  
+	//this test verifies that the number of lines is correct with the single,multi-line,document comments and with the loc parameter.
 	  public void testLocComments() {
 		  int value = 0;
 		  List<String> lines;
@@ -104,7 +105,7 @@ public class countingLinesTest
 		  
 	   assertEquals(35,value);
 	  }
-	  
+	//check the error in the document address
 	  public void testFileNotFound() {
 		  List<String> lines;
 		  String val = null;
