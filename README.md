@@ -2,7 +2,7 @@
 ## Daniel Santiago Ducuara Ardila
 ## 02/06/2021
 ![Diseño CountingLinesline](Design/countingLines.PNG "countingLines")<br>
-El objetivo del proyecto es realizar un conteo de lineas de un archivo, el usuario debe ingresar dos parámetros, el primer parámetro debe ser phy o loc.
+El objetivo del proyecto es realizar un conteo de lineas de un archivo, el usuario debe ingresar dos parámetros, el primer parámetro debe ser phy o loc,
 con phy el programa contará todas las lineas del archivo, con loc contará las lineas menos las lineas en blanco y lineas comentadas, el segundo parámetro
 es la ruta del archivo que se desea realizar el conteo.
 El método main es quien se encarga de recibir los parámetros indicados por el usuario en una lista y de ingresar cada linea a una lista llamada lines.
