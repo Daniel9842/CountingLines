@@ -1,0 +1,13 @@
+
+if(commentType2IndexStart!=-1) {
+				commentType2 = true;
+			}
+			
+			if(commentType1Index!=0 && string.length()>0 && commentType2==false) {
+			 	value+=1;
+			}
+
+			if(commentType2IndexEnd!=-1) {
+				commentType2 = false;
+
+			}

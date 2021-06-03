@@ -1,0 +1,23 @@
+//method locCount
+public static int locCount(List<String> lines){
+    	//commentType2 is a variable which controls if the line is inside a comment.
+    	boolean commentType2 = false;
+    	//value is a variable that stores the number of lines.
+    	int value = 0;
+		for(int i = 0; i < lines.size(); i++)
+		{
+			//string is a variable which contains a line from the file and removes the spaces.
+			String string =  lines.get(i).replaceAll("\\s","");
+			//these variables save the position if there is a comment on the line.
+			if(commentType2IndexStart!=-1) {
+				commentType2 = true;
+			}
+			//if these conditions are met, the line is counted.
+			if(commentType1Index!=0 && string.length()>0 && commentType2==false) {
+				value+=1;
+			}
+			if(commentType2IndexEnd!=-1) {
+				commentType2 = false;
+			}
+		}
+		return value;

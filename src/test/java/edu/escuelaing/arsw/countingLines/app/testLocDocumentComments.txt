@@ -1,0 +1,38 @@
+ /*this method analyzes the first input and decides what the program does.
+	 *@params lines is a list of strings, each value contains a line from the file.
+	 *@params option is the type of count that you want to perform.
+	 *@return the value of the count.
+	 */
+    public static int toDecide(List<String> lines,String option){
+    	int count = 0;
+    	if(option.equals("phy")) {
+    		count = lines.size();
+    	}
+    	else if(option.equals("loc")){
+    		count = locCount(lines);
+    	} else {
+    		System.out.println("Esta no es una entrada correcta, ingrese phy o loc");
+    	}
+    	return count;	
+    }
+    /*this method counts the number of lines in a file without the comments and white lines.
+	 *@params lines is a list of strings, each value contains a line from the file.
+	 *@return the value of the count.
+	 */
+    public static int locCount(List<String> lines){
+    	boolean commentType2 = false;
+    	int value = 0;
+		for(int i = 0; i < lines.size(); i++)
+		{
+			if(commentType2IndexStart!=-1) {
+				commentType2 = true;
+			}
+			if(commentType1Index!=0 && string.length()>0 && commentType2==false) {
+				value+=1;
+			}
+			if(commentType2IndexEnd!=-1) {
+				commentType2 = false;
+			}
+		}
+		return value;
+    }

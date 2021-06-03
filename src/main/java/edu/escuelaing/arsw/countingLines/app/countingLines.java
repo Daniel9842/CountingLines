@@ -11,8 +11,6 @@ import java.util.*;
 //This class counts the number of lines in a file.
 public class countingLines 
 {	
-	//Count is a variable that stores the number of lines.
-	private static int count = 0;
 	
 	/*this method reads the file and executes the method toDecide.
 	 *@params args is a list of strings, contains the required parameters in the program.
@@ -32,25 +30,33 @@ public class countingLines
     /*this method analyzes the first input and decides what the program does.
 	 *@params lines is a list of strings, each value contains a line from the file.
 	 *@params option is the type of count that you want to perform.
+	 *@return the value of the count.
 	 */
-    public static void toDecide(List<String> lines,String option){
+    public static int toDecide(List<String> lines,String option){
+    	//Count is a variable that stores the number of lines.
+    	int count = 0;
+    	
     	if(option.equals("phy")) {
-    		System.out.println(lines.size());
+    		count = lines.size();
     	}
     	else if(option.equals("loc")){
-    		locCount(lines);
+    		count = locCount(lines);
     	} else {
     		System.out.println("Esta no es una entrada correcta, ingrese phy o loc");
     	}
+    	return count;
     	
     }
     
     /*this method counts the number of lines in a file without the comments and white lines.
 	 *@params lines is a list of strings, each value contains a line from the file.
+	 *@return the value of the count.
 	 */
-    public static void locCount(List<String> lines){
+    public static int locCount(List<String> lines){
     	//commentType2 is a variable which controls if the line is inside a comment.
     	boolean commentType2 = false;
+    	//value is a variable that stores the number of lines.
+    	int value = 0;
 		for(int i = 0; i < lines.size(); i++)
 		{
 			//string is a variable which contains a line from the file and removes the spaces.
@@ -62,12 +68,12 @@ public class countingLines
 			}
 			//if these conditions are met, the line is counted.
 			if(commentType1Index!=0 && string.length()>0 && commentType2==false) {
-				count+=1;
+				value+=1;
 			}
 			if(commentType2IndexEnd!=-1) {
 				commentType2 = false;
 			}
 		}
-		System.out.println(count);
+		return value;
     }
 }		
